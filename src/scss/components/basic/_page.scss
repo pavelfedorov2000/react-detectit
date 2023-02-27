@@ -1,0 +1,20 @@
+.page {
+    position: relative;
+    flex: 1 0 auto;
+    padding-bottom: 11rem;
+
+    @media (max-width: 1024px) {
+        padding-top: 2.4rem;
+    }
+
+    @media (max-width: 500px) {
+        padding-bottom: 3rem;
+    }
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

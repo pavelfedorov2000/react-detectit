@@ -1,0 +1,39 @@
+// colors
+:root {
+    --container-width: 150rem;
+    --container-padding: 1.6rem;
+
+    --gap: 5.2rem;
+
+    --dark: #101112;
+    --dark-gray: #505661;
+    --gray: #9b9b9b;
+    --gray-777: #777;
+    --gray-bg: #f4f4f6;
+    --gray-c0: #c0c0c0;
+    --line-color: #eaeaea;
+    --green: #479458;
+    --green-second: #2d703c;
+    --red: #ee3333;
+
+    --icon-size_xs: 1rem;
+    --icon-size_s: 1.2rem;
+    --icon-size: 1.6rem;
+    --icon-size_ms: 2rem;
+    --icon-size_m: 2.4rem;
+    --icon-size_l: 3.2rem;
+
+    --offset-l: 3.2rem;
+    --offset-m: 2.4rem;
+    --offset: 1.6rem;
+    --offset-s: 1.2rem;
+    --offset-xs: 1rem;
+    --offset-xxs: 0.8rem;
+    --offset-xxxs: 0.4rem;
+}
+
+$transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+$duration: 0.3s;
+$duration--long: 1s;
+$delay: $duration;
+$transition: $duration $transition-timing;

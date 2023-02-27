@@ -1,0 +1,59 @@
+.button {
+    $this: &;
+
+    display: inline-flex;
+    align-content: inherit;
+    justify-content: center;
+    transition: $transition all;
+
+    /* @media (any-hover: hover) {
+        &:hover {
+            
+        }
+    } */
+
+    &[disabled] {
+        border: none;
+        cursor: not-allowed;
+
+        /* @media (any-hover: hover) {
+            &:hover {
+                
+            }
+        } */
+    }
+
+    &--disabled {
+        background-color: transparent;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &--border {
+        background-color: transparent;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &--transparent {
+        background-color: transparent;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &--style {
+        &_bg {}
+    }
+}
