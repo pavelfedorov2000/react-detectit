@@ -1,0 +1,15 @@
+$name: 'breadcrumbs';
+
+.#{$name} {
+    $this: &;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+    }
+}

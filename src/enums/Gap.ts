@@ -1,5 +1,7 @@
 export enum Gap {
     XL = 'XL',
     L = 'L',
-    S = 'S'
+    M = 'M',
+    S = 'S',
+    XS = 'XS'
 }

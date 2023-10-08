@@ -1,0 +1,45 @@
+.button {
+    $this: &;
+
+    display: inline-flex;
+    align-content: inherit;
+    justify-content: center;
+    transition: var(--transition) all;
+
+    /* @media (any-hover: hover) {
+        &:hover {
+            
+        }
+    } */
+
+    &--primary {
+
+    }
+
+    &--secodary {
+
+    }
+
+    &[disabled],
+    &--disabled {
+        border: none;
+        cursor: not-allowed;
+
+        /* @media (any-hover: hover) {
+            &:hover {
+                
+            }
+        } */
+    }
+
+    &--border,
+    &--transparent {
+        background-color: transparent;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}

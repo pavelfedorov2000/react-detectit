@@ -1,14 +1,12 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { HeaderAction } from "../interfaces/HeaderAction";
+import { ClassName } from "../enums/ClassName";
+import { WithClassName } from "../types/types";
 
-interface Props extends HeaderAction {
-    className?: string;
-}
-
-const ActionHeader = ({ popupId, className, href, icon, text, onClick, quantity }: Props) => {
+const ActionHeader = ({ popupId, className, href, icon, text, onClick, quantity }: HeaderAction & WithClassName) => {
     const handleClick = () => {
-        document.body.classList.add('_lock');
+        document.body.classList.add(ClassName.Lock);
         onClick && onClick();
     }
 

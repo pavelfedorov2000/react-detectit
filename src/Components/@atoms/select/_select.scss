@@ -1,0 +1,48 @@
+$name: 'select';
+
+.#{$name} {
+    $this: &;
+
+    position: relative;
+
+    &__toggle {
+        @include flex-center-between;
+
+        &-icon {
+            transition: var(--transition) fill,
+                var(--transition) transform;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    //fill: var(--green);
+                }
+            }
+        }
+
+        &[aria-expanded="true"] {
+            #{$this}__toggle-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 25;
+        background-color: var(--white);
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__option {
+        position: relative;
+        @include flex-center-y;
+        cursor: pointer;
+    }
+}

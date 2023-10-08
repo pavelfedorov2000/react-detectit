@@ -1,4 +1,4 @@
-import { instagram, vk, facebook, youtube, tiktok, google } from '../Components/Socials';
+import { instagram, vk, facebook, youtube, tiktok, google } from '../components/Socials';
 import { SocialList } from '../enums/Social';
 import { Social as SocialType } from '../interfaces/Social';
 

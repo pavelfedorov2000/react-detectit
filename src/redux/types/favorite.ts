@@ -2,7 +2,7 @@ import { CatalogItem } from "../../interfaces/CatalogItem";
 import { ActionType } from "../actionsList";
 
 export interface FavoriteProductsState {
-    favorites: CatalogItem[]
+    favorites: any[]
 }
 
 interface AddFavoriteProductAction {
